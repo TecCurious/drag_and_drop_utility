@@ -1,0 +1,106 @@
+/* Set background color of the body */
+body{
+    background: rgb(16, 5, 88);
+}
+
+/* Container styles */
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styles for image box */
+.imgBox{
+    background-image:url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=600');
+    position: relative;
+    top: 7px;
+    left: 5px;
+    right: 5px;
+    height: 36vh;
+    width: 20vw;
+    cursor: pointer;
+}
+
+/* Styles for white box */
+.whiteBox{
+    display: inline-block;
+    height: 38vh;
+    width: 21vw;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+/* Styles for elements with class 'hold' */
+.hold{
+    border: solid red 4px;
+}
+
+/* Styles for elements with class 'dashed' */
+.dashed{
+    background: rgb(214, 206, 206);
+    border-style: dashed;
+}
+
+/* Styles for elements with class 'hide' */
+.hide{
+    display: none;
+}
+
+/* Styles for success message */
+.success-message{
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgba(36, 112, 187, 0.629);
+}
+
+/* Styles for buttons */
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Styles for reset button */
+.reset{
+    padding: 8px 60px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    font-size: 22px;
+    background-color: rgb(3, 96, 3);
+}
+
+/* Styles for reset button on hover */
+.reset:hover{
+    background-color: rgb(8, 165, 8);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Media query for screens with max width of 800px */
+@media only screen and (max-width: 800px) {
+    
+    .container{
+        flex-wrap: wrap;
+    }
+ 
+    .button{
+        flex-wrap: wrap;
+    }
+
+    .imgBox{
+        overflow: hidden;
+        height: 26vh;
+        width: 20vw;
+    }
+
+    .whiteBox{
+        height: 28vh;
+    }
+}
